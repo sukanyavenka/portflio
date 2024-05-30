@@ -8,7 +8,7 @@ import {getImageUrl} from "../../utils";
     <nav className={styles.navbar}>
         <a className ={styles.title}href="/">Porofolio</a>
         <div className={styles.menu}>
-            <img className={styles.menuBtn} src={menuOpen ? getImageUrl("nav/closeicon.png") :getImageUrl("nav/menuicon.png")} alt="menu-button"
+            <img className={styles.menuBtn} src={menuOpen ? getImageUrl("nav/closeicon.png") : getImageUrl("nav/menuicon.png")} alt="menu-button"
             onClick={() => setMenuOpen(!menuOpen)}
             />
             <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`} onClick={() => setMenuOpen(false)}>
